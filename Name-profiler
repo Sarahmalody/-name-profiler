@@ -1,0 +1,35 @@
+name = input("Please enter your name: ")
+abbreviation = ""
+
+for letter in name.upper():
+    case_statement = {
+        "A": "AMAZING",
+        "B": "BRILLIANT",
+        "C": "CONFIDENT",
+        "D": "DELIGHTFUL",
+        "E": "EXCEPTIONAL",
+        "F": "FABULOUS",
+        "G": "GENEROUS",
+        "H": "HAPPY",
+        "I": "INTELLIGENT",
+        "J": "JOYFUL",
+        "K": "KIND",
+        "L": "LOVING",
+        "M": "MAGNIFICENT",
+        "N": "NICE",
+        "O": "OPTIMISTIC",
+        "P": "POSITIVE",
+        "Q": "QUIET",
+        "R": "RESILIENT",
+        "S": "SUCCESSFUL",
+        "T": "TERRIFIC",
+        "U": "UNIQUE",
+        "V": "VALUABLE",
+        "W": "WONDERFUL",
+        "X": "XTRAORDINARY",
+        "Y": "YOUTHFUL",
+        "Z": "ZESTFUL"
+    }
+    abbreviation += f"{letter}-" + case_statement.get(letter, "") + ", "
+
+print(abbreviation[:-2])
